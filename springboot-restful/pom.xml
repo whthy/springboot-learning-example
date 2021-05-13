@@ -9,6 +9,7 @@
     <name>springboot-restful</name>
 
     <!-- Spring Boot 启动父依赖  测试master 2-->
+    <!-- Spring Boot 启动父依赖  测试 dev2-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
