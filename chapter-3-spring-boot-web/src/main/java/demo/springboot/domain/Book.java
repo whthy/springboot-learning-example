@@ -7,6 +7,7 @@ import java.io.Serializable;
  *
  * Created by bysocket on 27/09/2017.
  */
+
 public class Book implements Serializable {
 
     /**
@@ -73,6 +74,10 @@ public class Book implements Serializable {
         this.name = name;
     }
 
+    /**
+     *
+     * @param name
+     */
     public Book(String name) {
         this.name = name;
     }
