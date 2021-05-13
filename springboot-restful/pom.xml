@@ -8,8 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-restful</name>
 
-    <!-- Spring Boot 启动父依赖  测试master dev master go on on3-->
-    <!-- Spring Boot 启动父依赖  测试 dev  goon-->
+    <!-- Spring Boot 启动父依赖  测试master 1-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
