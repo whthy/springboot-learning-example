@@ -44,7 +44,12 @@ public class CityRestController {
     public void modifyCity(@PathVariable("id") Long id) {
         cityService.deleteCity(id);
     }
-
+/**
+ *  
+ * 
+ * @return 
+ * @date 2021-5-14 14:33
+ */
     @RequestMapping(value = "/api/countcity/{id}", method = RequestMethod.GET)
     public void countCitybyProvince(@PathVariable("id") Long id) {
         cityService.countCitybyProvince(id);
