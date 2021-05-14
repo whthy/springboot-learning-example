@@ -44,4 +44,9 @@ public class CityRestController {
     public void modifyCity(@PathVariable("id") Long id) {
         cityService.deleteCity(id);
     }
+
+    @RequestMapping(value = "/api/countcity/{id}", method = RequestMethod.GET)
+    public void countCitybyProvince(@PathVariable("id") Long id) {
+        cityService.countCitybyProvince(id);
+    }
 }

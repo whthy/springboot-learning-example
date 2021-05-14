@@ -10,7 +10,6 @@ import java.util.List;
 
 /**
  * 城市业务逻辑实现类
- *
  * Created by bysocket on 07/02/2017.
  */
 @Service
@@ -19,10 +18,11 @@ public class CityServiceImpl implements CityService {
     @Autowired
     private CityDao cityDao;
 
+    @Override
     public List<City> findAllCity(){
         return cityDao.findAllCity();
     }
-
+    @Override
     public City findCityById(Long id) {
         return cityDao.findById(id);
     }
@@ -32,6 +32,11 @@ public class CityServiceImpl implements CityService {
         return cityDao.saveCity(city);
     }
 
+    /**
+     *
+     * @return
+     * @date 2021-5-14 13:35
+     */
     @Override
     public Long updateCity(City city) {
         return cityDao.updateCity(city);
@@ -42,4 +47,8 @@ public class CityServiceImpl implements CityService {
         return cityDao.deleteCity(id);
     }
 
+    @Override
+    public Long countCitybyProvince(long id) {
+        return cityDao.countbyprovince(id);
+    }
 }

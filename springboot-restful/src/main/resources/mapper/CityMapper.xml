@@ -16,7 +16,13 @@
 		select
 		<include refid="Base_Column_List" />
 		from city
-		where id = #{id}
+		where provinceId = #{id}
+	</select>
+
+	<select id="countbyprovince" resultType="java.lang.Long" parameterType="java.lang.Long">
+		select  count(1)
+		from city
+		where provinceId = #{provinceId}
 	</select>
 
 	<select id="findAllCity" resultMap="BaseResultMap" >

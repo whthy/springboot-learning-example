@@ -6,7 +6,7 @@ import java.util.List;
 
 /**
  * 城市业务逻辑接口类
- *
+ * <p>
  * Created by bysocket on 07/02/2017.
  */
 public interface CityService {
@@ -36,7 +36,6 @@ public interface CityService {
 
     /**
      * 更新城市信息
-     *
      * @param city
      * @return
      */
@@ -44,9 +43,15 @@ public interface CityService {
 
     /**
      * 根据城市 ID,删除城市信息
-     *
      * @param id
      * @return
      */
     Long deleteCity(Long id);
+
+    /**
+     *统计城市数量
+     * @param id
+     * @return
+     */
+    Long countCitybyProvince(long id);
 }
