@@ -39,6 +39,7 @@ public class IOtest {
             e.printStackTrace();
         } finally {
             fis.close();
+            //
             bos.close();
         }
     }
