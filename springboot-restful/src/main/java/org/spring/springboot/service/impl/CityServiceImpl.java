@@ -49,6 +49,6 @@ public class CityServiceImpl implements CityService {
 
     @Override
     public Long countCitybyProvince(long id) {
-        return cityDao.countbyprovince(id);
+        return  cityDao.countbyprovince(id);
     }
 }
