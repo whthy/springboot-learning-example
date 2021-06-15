@@ -33,5 +33,5 @@ public interface CityDao {
 
     Long deleteCity(Long id);
 
-    Long countbyprovince(@Param("provinceId")Long provinceId);
+    Long countbyprovince(Long provinceId);
 }
